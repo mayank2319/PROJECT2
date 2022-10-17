@@ -385,14 +385,14 @@
         function closeAddTask() {
             taskInput.style.visibility = "hidden";
         }
-        // Gets the Task entered into the input field
+        // it gets the task
         function getTask() {
             var task = document.getElementById("task");
             var res = task.value;
             task.value = "";
             return res;
         }
-        // Creates a card (task) and adds it
+        //this creates a task
         function addTask(title) {
             var card = document.createElement("div");
             card.className = "card";
@@ -429,7 +429,7 @@
             item.value = "";
             return res;
         }
-        // Creates a item and adds it to the current_card
+       //to add items
         function addItem() {
             var card = current_card;
             var currentTask = card.parentElement;
@@ -452,6 +452,7 @@
         function removeItem(item) {
             item.querySelector("input").disabled = true;
             item.querySelector("span").classList.add("strike");
+            
         }
 
     </script>
